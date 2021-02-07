@@ -10,29 +10,29 @@
     <title>AuthForm</title>
 </head>
 <body>
-    <div class="auth-form-cnt">
+    <div class="auth-form-cnt col-flex-cnt">
         <div class="auth-card">
-            <form action="/index.html" class="auth-form">
+            <form action="/index.html" class="col-flex-cnt">
                 
-                <div class="auth-input">
+                <div class="auth-input col-flex-cnt">
                     <label for="username">User name</label>
                     <input id="auth_user_name" type="text" name="username" placeholder="Enter your user name">
                 </div>
                 
-                <div class="auth-input">
+                <div class="auth-input col-flex-cnt">
                     <label for="password">Password</label>
                     <input id="auth_password" type="password" name="password" placeholder="Enter your password">
                 </div>
                 
                 <button type="submit" onclick="login()">Log in</button>
 
-                <div class="auth-input auth-checkbox">
+                <div class="auth-checkbox row-flex-cnt">
                     <input id="auth_checkbox" type="checkbox">
                     <span>Submit form</span>
                 </div>
             </form>
-            <span id="error" class="error"></span>
         </div>
+        <span id="error" class="error"></span>
     </div>
 
     <script src="./script.js"></script>
