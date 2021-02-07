@@ -34,15 +34,43 @@
 // //     console.log('Document is ready');
 // // });
 
-const logIn = () => {
-    console.log('on press');
-}
-
 // создать функцию которая на вход берет два параметра имя и возраст
 // проверить возраст был старше 6 (больше или равно) и 
 // проверить что бы строка не была пустой
 // возвращает true - если проверка прошла (if)
 // возвращает false - если проверка не прошла
+
+
+
+const a = (name, age) => {
+    if(name != '' && age > 6) {
+        return true;
+    }
+
+    return false;
+}
+
+const a = (name, age) => {
+    if(name != '' && age > 6) {
+        return true;
+    } else {
+        return false
+    }
+}
+
+const a = (name, age) => {
+    //     [      условие        ] ? верно : не верно 
+    return (name != '' && age > 6) ? true : false;
+}
+
+const a1 = (name, age) => (name != '' && age > 6) ? true : false;
+
+console.log(a1('evgeniy', 12));
+
+
+
+
+
 
 a = 5
 if(a < 8) {
